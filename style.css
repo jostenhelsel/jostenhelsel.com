@@ -1,3 +1,46 @@
-.icon {
-  color:#000
+:root {
+  --black-smoke: #262827;
+  --hoodie: #748169;
+  --moto-chrome: #C5C9C8;
+}
+
+html {
+  font-size: 16px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--moto-chrome);
+  font-family: 'Sono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Anybody', sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h2 {
+  font-family: 'Anybody', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-stretch: 80%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--black-smoke);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
