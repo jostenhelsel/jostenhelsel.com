@@ -1,0 +1,69 @@
+body {
+  padding: 100px 60px 0 60px;
+}
+
+.swatch-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 15em;
+  border: 1px solid var(--black-smoke);
+  font-family: 'Sono', monospace;
+  background-color: #fff;
+  /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.swatch-color {
+  width: 100%;
+  padding-top: 100%;
+}
+
+.swatch:nth-child(1) .swatch-color {
+  background-color: var(--black-smoke);
+}
+
+.swatch:nth-child(2) .swatch-color {
+  background-color: var(--hoodie);
+}
+
+.swatch:nth-child(3) .swatch-color {
+  background-color: var(--moto-chrome);
+}
+
+.swatch-text {
+  padding: 1rem;
+  margin: 0px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media screen and (max-width: 878px) {
+  .swatch-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 100 20px 0 20px;
+  }
+
+  .swatch {
+    min-width: 15em;
+  }
+
+  .swatch-text {
+    font-size: 0.8rem;
+  }
+}

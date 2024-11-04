@@ -1,7 +1,25 @@
+@font-face {
+  font-family: 'Anybody';
+  src: url('Anybody.woff2') format('woff2');
+  font-weight: 100 900;
+  font-stretch: 50% 150%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sono';
+  src: url('Sono.ttf') format('truetype');
+  font-weight: 100 1000;
+}
+
 :root {
   --black-smoke: #262827;
   --hoodie: #748169;
   --moto-chrome: #C5C9C8;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 html {
@@ -12,35 +30,66 @@ html {
 body {
   background-color: var(--moto-chrome);
   font-family: 'Sono', monospace;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1200px;
+}
+
+a {
+  color: var(--black-smoke);
+  text-decoration: none;
 }
 
 h1 {
-  font-family: 'Anybody', sans-serif;
+  font-family: 'Anybody';
   font-size: 6rem;
+  color: var(--black-smoke);
   text-transform: uppercase;
-  font-weight: 900;
   margin-top: 0px;
-  margin-bottom: 10px;
-  font-variation-settings:
-    "wdth" 100;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-stretch: 115%;
 }
 
 h2 {
   font-family: 'Anybody', sans-serif;
   font-size: 2rem;
+  color: var(--black-smoke);
   text-transform: uppercase;
-  font-weight: 200;
-  font-stretch: 80%;
+  letter-spacing: 15;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
 }
 
 p {
   color: var(--black-smoke);
   font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding: 0;
+  font-weight: 410;
+}
+
+.body-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 300px;
+  margin: calc(45vh - 3rem) auto 0px auto;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 100 20px 0 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    letter-spacing: 12px;
+  }
 }
